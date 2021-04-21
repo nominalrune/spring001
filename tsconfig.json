@@ -3,12 +3,23 @@
         "./src/**/*"
     ],
     "compilerOptions": {
-        "strict": true,
+        "strict": false,
         "esModuleInterop": true,
+        "target": "ES6",
+        "module": "CommonJS",
         "lib": [
             "dom",
-            "es2015"
+            "DOM.Iterable",
+            "esnext",
+            "ScriptHost",
+            "WebWorker.ImportScripts"
         ],
-        "jsx": "react-jsx"
+        "jsx": "react-jsx",
+        "allowUmdGlobalAccess": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "noFallthroughCasesInSwitch": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
     }
 }
